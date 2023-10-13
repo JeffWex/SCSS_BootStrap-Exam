@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+
+    <title>Libray Music</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="./Images/wifitifyIcon.png" width="50px" height="50px">
+            <a class="navbar-brand" href="index.html">Wifi-Tify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="libraryMusic.html">Library Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+                    <div class="register">
+                        <li class="nav-item">
+                            <a class="nav-link" href="signUp.html">Register</a>
+                        </li>
+                    </div>
+
+                    <div class="signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="signUp.html">Sign Up</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Wifi-Tify Library</h1>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </header>
+
+        <div class="library">
+            <div class="playlist">
+                <h2 class="playlist-title">My Playlist</h2>
+                <ul class="song-list">
+                    <li class="song">
+                        <div class="song-info">
+                            <h3 class="song-title">Angels among demons</h3>
+                            <img src="./Images/angelsAmongDemons.jpg">
+                            <p class="song-artist">Instrumental Core</p>
+                        </div>
+                        <div class="controls">
+                            <button class="btn btn-success play">Play</button>
+                            <button class="btn btn-secondary add">Add to Playlist</button>
+                        </div>
+                    </li>
+                    <!-- Add more songs here -->
+                </ul>
+            </div>
+
+            <div class="library-songs">
+                <h2 class="library-title">All Songs</h2>
+                <ul class="song-list">
+                    <li class="song">
+                        <div class="song-info">
+                            <h3 class="song-title">Wrath of sea</h3>
+                           <img src="./Images/wrathofsea.jpg">
+                            <p class="song-artist">Two step from hell</p>
+                        </div>
+                        <div class="controls">
+                            <button class="btn btn-success play">Play</button>
+                            <button class="btn btn-secondary add">Add to Playlist</button>
+                        </div>
+                    </li>
+                    <!-- Add more songs here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="./Images/wifitifyIcon.png" width="50px" height="50px">
+            <a class="navbar-brand" href="index.html">Wifi-Tify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="libraryMusic.html">Library Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    <div class="register">
+                        <li class="nav-item">
+                            <a class="nav-link" href="signUp.html">Register</a>
+                        </li>
+                    </div>
+
+                    <div class="signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="signUp.html">Sign Up</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center my-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Send us a message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Contact Information</h2>
+                    <address>
+                        <strong>Wifi-Tify</strong><br>
+                        1234 Main Street<br>
+                        Vancouver, British Columbia, XXXX-XX<br>
+                        <abbr title="Phone">Phone:</abbr> (123) 456-7890
+                    </address>
+                    <address>
+                        <strong>Email</strong><br>
+                        <a href="mailto:info@wifitify.com">info@wifitify.com</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

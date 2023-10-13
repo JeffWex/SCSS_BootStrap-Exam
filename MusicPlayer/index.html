@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+
+    <title>Spotify-like Music Player</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="./Images/wifitifyIcon.png" width="50px" height="50px">
+             <a class="navbar-brand" href="index.html">Wifi-Tify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="libraryMusic.html">Library Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    <div class="register">
+                        <li class="nav-item">
+                            <a class="nav-link" href="signUp.html">Register</a>
+                        </li>
+                    </div>
+
+                    <div class="signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="signUp.html">Sign Up</a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Music on Wifi-Tify</h1>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="album-cover rounded-circle">
+                <!-- Insert album cover image here -->
+                <img src="./Images/angelsAmongDemons.jpg">
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-4">
+            <div class="song-info">
+                <h2>Angels among demons</h2>
+                <div style="text-align: center;">
+
+                    <p>Artist: Two step from hell</p>
+                </div>
+                
+            </div>
+            <div class="controls">
+                <button id="prevButton" class="btn btn-success">Previous</button>
+                <button id="playButton" class="btn btn-success">Play</button>
+                <button id="nextButton" class="btn btn-success">Next</button>
+            </div>
+        </div>
+        <ul class="playlist mt-4 list-group">
+            <li class="song list-group-item">Instrumental Core - The Angels Among Demons (Dubstep)</li>
+            <li class="song list-group-item">Wrath of sea - Two step from hell</li>
+            <!-- Add more songs here -->
+        </ul>
+    </div>
+    <div style="width:300px; margin:auto; position:relative;">
+        <audio class="audioplay" id="audio" controls>
+            <source src="./Music/Instrumental Core - The Angels Among Demons (Dubstep).mp3" type="audio/mpeg">
+            <source src="./Music/Wrath of sea - Two step from hell.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!--New player -->
+    <!-- <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+      <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div> -->
+
+    <script src="./Scripts/scripts.js"></script>
+
+    <div class="footer" >
+        <div class='container-fluid'>
+            <div class='col-md-4'>
+                <p>&copy; 2023 Wifi-Tify. All rights reserved.</p>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
